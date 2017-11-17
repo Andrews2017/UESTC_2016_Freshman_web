@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.freshman.Dao.AnswerDao">
+    <resultMap id="answerMap" type="answer">
+        <id property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="proId" column="pro_id"/>
+        <result property="score" column="score"/>
+        <result property="uploadAnswer" column="upload_answer"/>
+        <result property="category" column="category"/>
+        <result property="submitTime" column="submit_time"/>
+        <result property="correctpersonId" column="correctperson_id"/>
+        <result property="comment" column="comment"/>
+        <result property="correct" column="correct"/>
+    </resultMap>
+    <resultMap id="totalScoreMap" type="totalscore">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="category" column="category"/>
+        <result property="grade" column="grade"/>
+        <result property="nameId" column="name_id"/>
+        <result property="score" column="score"/>
+    </resultMap>
+
+    <insert id="insertAnswer">
+        INSERT INTO freshmandb.answer (user_id, pro_id, upload_answer, category, submit_time) VALUES (#{0},#{1},#{2},#{3},#{4})
+    </insert>
+
+    <select id="getSubmitCounts" resultType="int">
+        SELECT COUNT(1) FROM freshmandb.answer WHERE user_id = #{1} AND pro_id = #{0}
+    </select>
+
+    <select id="getHighScore" resultType="int">
+        SELECT IFNUll(MAX(score),0) FROM freshmandb.answer WHERE user_id = #{1} AND pro_id = #{0}
+    </select>
+
+    <select id="getLastSubmit" parameterType="String" resultMap="answerMap">
+        SELECT * from freshmandb.answer where submit_time IN (SELECT max(submit_time) FROM answer
+        group BY user_id,pro_id) AND answer.category = #{category} AND correctperson_id = 0
+    </select>
+
+    <select id="getAllSubmit" resultMap="answerMap">
+        SELECT * FROM freshmandb.answer WHERE user_id = #{0} AND pro_id = #{1} ORDER BY submit_time ASC
+    </select>
+
+    <select id="getAnswer" parameterType="int">
+        SELECT * FROM freshmandb.answer WHERE id = #{id}
+    </select>
+
+    <update id="insertScoreAndComment">
+        UPDATE freshmandb.answer SET score = #{1},correctperson_id = #{2},comment = #{3}  WHERE id = #{0}
+    </update>
+
+</mapper>

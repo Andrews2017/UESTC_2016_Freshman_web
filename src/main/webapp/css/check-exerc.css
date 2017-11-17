@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+	font-family: "Microsoft YaHei UI";
+	padding: 0px;
+	margin: 0px;
+}
+.showExerc{
+	background-image: url("../images/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width:600px; 
+	height:650px;
+	position:fixed;
+	left: 30%;
+	top: 0px;
+	border-radius: 10px;
+}
+.close-btn{
+	position: relative;
+	left: 578px;
+}
+.content3{
+	width: 80%;
+	margin:0 auto;
+}
+.confirm{
+	width: 60%;
+	margin:0 auto;
+	position: relative;
+	top: 0px;
+}
+textarea{
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 350px;
+	max-height: 367px;
+}
+.para{
+	font-size: 11px;
+	padding: 4px;
+}
+.confirm-btn{
+	position: relative;
+	left: 204px;
+}

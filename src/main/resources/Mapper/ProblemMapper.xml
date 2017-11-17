@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.freshman.Dao.ProblemDao">
+    <resultMap id="problemMap" type="problem">
+        <id property="proId" column="pro_id"/>
+        <result property="title" column="title"/>
+        <result property="category" column="category"/>
+        <result property="content" column="content"/>
+        <result property="score" column="score"/>
+        <result property="level" column="level"/>
+    </resultMap>
+
+    <select id="findAllProblemsByCate" resultMap="problemMap">
+        SELECT * FROM freshmandb.problem WHERE category = #{0} ORDER BY level
+    </select>
+
+    <select id="selectProblemInfo" parameterType="int" resultMap="problemMap">
+        SELECT * FROM freshmandb.problem WHERE pro_id = #{proId}
+    </select>
+
+    <select id="getProblemInfoByTitle" parameterType="String" resultMap="problemMap">
+        SELECT * FROM freshmandb.problem WHERE title = #{title}
+    </select>
+
+</mapper>

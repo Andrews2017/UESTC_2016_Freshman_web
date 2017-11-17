@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+	font-family: "Microsoft YaHei UI";
+}	
+body{
+	background-color:lightgrey;
+	
+}
+#signup-form{
+	 width: 200px;
+	 margin: 0 auto;
+	 margin-top: 120px;
+}
+#signup-logo img{
+	width: 300px;
+}
+input{
+	padding: 13px;
+	width: 270px;
+	font-size: 16px;
+}
+input#code-number{
+	width: 160px;
+	position: relative;
+	float: left;
+}
+.code-box{
+	width: 300px;
+}
+#get-code button{
+	position: relative;
+	left: 0px;
+	top: 14px;
+	width: 110px;
+	padding: 15px;
+	margin-top: -48px;
+}
+.signup-submit {
+	width: 270px;
+	padding: 13px;
+	background-color: #286090;
+	border-color: #204d74;
+	border-radius: 8px;
+	color:#fff;
+	text-align: center;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.login-form{
+	display: block;
+}
+.register-form{
+	display: none;
+}
+#show-login,#show-register{
+	cursor: pointer;
+}

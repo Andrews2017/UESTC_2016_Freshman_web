@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+.tijiao-xiangxi-box{
+	display: none;
+	background-image: url("../images/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width:600px; 
+	height:600px;
+	position: fixed;
+	left: 30%;
+	top: 0px;
+	border-radius: 10px;
+	font-family: "Microsoft YaHei UI";
+}
+.close{
+	position: relative;
+	left: 578px;
+	width: 21px;
+	cursor: pointer;
+}
+.title2,.content4{
+	width: 95%;
+	margin:0 auto;
+}
+.timu-name{
+	width: 50%;
+	float: left;
+}
+.fenshu-title{
+	width: 20%;
+	float:right;
+	position: relative;
+    left: 60px;
+    top: 5px;
+}
+.title2{
+    height: 10%;
+}
+.content4{
+	height: 50%;
+}
+
+.timu-details{
+	height: 14%;
+	width: 80%;
+	margin:0 auto;
+	overflow-x: hidden;
+}
+ul{
+	list-style: none;
+	border-bottom: 2px solid grey;
+
+}
+ul li{
+	padding-bottom: 10px;
+	display: inline-block;
+}
+.shangzhuan-cishu,.defen,.pingyu,.xiazai{
+	position: relative;
+	top: 7px;
+}
+.shangzhuan-cishu{
+	left: 37px;
+}
+.pingyu{
+	left: 127px;
+}
+.defen{
+	left: 217px;
+}
+.xiazai{
+	left: 313px;
+}
+.cishu,.check,.fenshu2,.download{
+	position: relative;
+	font-size: 11px;
+	color: #909499;
+}
+.cishu{
+	left: 37px;
+}
+.check{
+	left: 141px;
+	top: 10px;
+	cursor: pointer;
+}
+.fenshu2{
+	left: 217px;
+}
+.download{
+	left: 325px;
+	top: 10px;
+	cursor: pointer;
+}

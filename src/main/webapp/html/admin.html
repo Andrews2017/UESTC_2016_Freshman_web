@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>管理中心-创联工作室招新平台</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- <link rel="stylesheet" type="text/css" href="../css/admin.css">
+	<link rel="stylesheet" type="text/css" href="../css/check-details.css">
+	<link rel="stylesheet" type="text/css" href="../css/check-exerc.css"> -->
+	<link rel="stylesheet" type="text/css" href="../css/all-styles.css">
+	<script src="../js/jquery-3.1.1.js"></script>
+	<link rel="shortcut icon" href="../images/icon.ico">
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<div class="header1">
+			<div class="top-left-logo"><img src="../images/signuplogo.png" ></div>
+			<div class="top-right-logo"><img src="../images/xiao-touxiang.png" ></div>
+			<div class="name">
+				<div class="upper-name"><p class="person-name">倪永老</p><img src="../images/show-down.png" class="showdn-button"></div>
+				<div class="down"><img src="../images/exit.png" class="exit-logo"><a href="#" class="tuichu">退出</a></div>
+			</div>
+		</div>
+		<div class="header2">
+			<div class="show-info">
+				<p class="mingzi">倪永</p>
+				<p><img src="../images/male.png"><span class="xuehao">2015060301001</span></p>
+			</div>
+		</div>
+	</div>
+	<!--<form class="touxiang" action="/user/uploadPic" method="POST" target="" enctype="multipart/form-data"><input class="picupload" type="file" name="photo">&lt;!&ndash; <img src="../images/touxiang.png"> &ndash;&gt;</form>-->
+	<form class="touxiang"><input class="picupload" type="file" name="photo"><!-- <img src="../images/touxiang.png"> --></form>
+
+	<div class="content">
+	    <div class="user-info-title user-info">
+			<font class="xinren">新人</font>
+			<font class="download-info">导出信息</font>
+		</div>
+		<div class="list-info-title list-info">
+			<ul class="tabs title-ul">
+				<li class="title-list"><a href="#tab1" class="houtai">后台</a></li>
+				<li class="title-list"><a href="#tab2" class="qianduan">前端</a></li>
+				<li class="title-list"><a href="#tab3" class="ios">iOS</a></li>
+				<li class="title-list"><a href="#tab4" class="anzhuo">安卓</a></li>
+				<li class="title-list"><a href="#tab5" class="yunwei">运维</a></li>
+				<li class="title-list"><a href="#tab6" class="sheji">设计</a></li>
+				<li class="title-list"><a href="#tab7" class="chanpin">产品</a></li>
+				<li  class="download-info">导出信息</li>
+				<!-- <li class="title-list" class="download-info"><a href="#">导出信息</a></li> -->
+			</ul>
+		</div>
+		<div class="exerc-info-title exerc-info">
+			<ul class="tabs title-ul">
+				<li class="title-list"><a href="#tabs1" class="houtai">后台</a></li>
+				<li class="title-list"><a href="#tabs2" class="qianduan">前端</a></li>
+				<li class="title-list"><a href="#tabs3" class="ios">iOS</a></li>
+				<li class="title-list"><a href="#tabs4" class="anzhuo">安卓</a></li>
+				<li class="title-list"><a href="#tabs5" class="yunwei">运维</a></li>
+				<li class="title-list"><a href="#tabs6" class="sheji">设计</a></li>
+				<li class="title-list"><a href="#tabs7" class="chanpin">产品</a></li>
+				<li class="download-info add-exerc">添加题目</li>
+				<!-- <li class="title-list" class="timu-add download-info"><a href="#">添加题目</a></li> -->
+			</ul>
+		</div>
+		<div class="content-nav">         
+			<ul>
+				<li class="nav-list list1">人员信息<span class="span-li"><img src="../images/show-down-red.png" class="show-down-red"></span>	
+				</li>
+				<li class="nav-list list2">排行榜<span class="span-li"><img src="../images/show-right.png" class="show-right2"></span></li>
+				<li class="nav-list list3">题目信息<span class="span-li"><img src="../images/show-right.png" class="show-right2"></span></li>
+				<li class="nav-list list4">系统设置<span class="span-li"><img src="../images/show-right.png" class="show-right2"></span></li>
+			</ul>
+		</div>
+		<div class="user-info-content user-info">
+		    <div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="yanyi-content">
+					<div class="content1"> 
+						<font><img src="../images/xiao-touxiang.png" class="small-logo"></font>
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font><img src="../images/look-info.png" class="look-info"></font>
+						<font class="delete">删除</font>
+					</div>
+					<!-- <div class="content1 cont2">
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永同学</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font><a href="../html/check_details.html"><img src="../images/look-info.png" class="look-info"></a></font>
+						<font class="delete">删除</font>
+					</div>
+					<div class="content1">
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font>
+					</div> -->
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="dayi-content">
+					<!-- <div class="content1">
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font><a href="../html/check_details.html"><img src="../images/look-info.png" class="look-info"></a></font>
+						<font class="delete">删除</font>
+					</div>
+					<div class="content1">
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font>
+					</div> -->
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="daer-content">
+					<!-- <div class="content1">
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font><a href="../html/check_details.html"><img src="../images/look-info.png" class="look-info"></a></font>
+						<font class="delete">删除</font>
+					</div>
+					<div class="content1">
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font>
+					</div> -->
+				</div>
+		    </div>
+		</div>
+
+		<div id="tab1" class="list-info-content list-info l-houtai">
+			<div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="list-yanyi-content" >
+					<div class="list-content1" class="list-info">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1" class="list-info">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="list-dayi-content">
+					<div class="list-content1" class="list-info">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1" class="list-info">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="list-daer-content">
+					<div class="list-content1" class="list-info">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1" class="list-info">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="tab2" class="list-info-content l-qianduan">
+			<div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="list-yanyi-content" >
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：77</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="list-dayi-content">
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="list-daer-content">
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="tab3" class="list-info-content l-ios">
+			<div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="list-yanyi-content" >
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：76</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="list-dayi-content">
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="list-daer-content">
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="tab4" class="list-info-content l-anzhuo">
+			<div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="list-yanyi-content" >
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：75</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="list-dayi-content">
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="list-daer-content">
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1" class="list-info">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="tab5" class="list-info-content l-yunwei">
+			<div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="list-yanyi-content" >
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：74</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="list-dayi-content">
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="list-daer-content">
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="tab6" class="list-info-content l-sheji ">
+			<div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="list-yanyi-content" >
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：73</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="list-dayi-content">
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：72</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="list-daer-content">
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="tab7" class="list-info-content l-chanpin">
+			<div class="first-level">
+		    	<p class="yanyi">研一</p>
+				<div class="list-yanyi-content" >
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：71</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+			<div class="second-level">
+		    	<p class="dayi">大一</p>
+				<div class="list-dayi-content">
+					<div class="list-content1" >
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		    <div class="second-level">
+		    	<p class="dayi">大二</p>
+				<div class="list-daer-content">
+					<div class="list-content1">
+						<!-- <font class="position1">1</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+					<div class="list-content1">
+						<!-- <font class="position">2</font>
+						<img src="../images/xiao-touxiang.png" class="small-logo">
+						<font class="xingming">倪永</font>
+						<font class="sex">性别：男</font>
+						<font class="school">学院：计算机科学与工程学院</font>
+						<font class="fenshu">分数：78</font>
+						<img src="../images/look-info.png" class="look-info">
+						<font class="delete">删除</font> -->
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="tabs1" class=" exerc-info-content exerc-info info">
+			<div class="first-level">
+				<p class="rumen">入门</p>
+				<div class="rumen-content">
+				    <div class="exerc-content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+					</div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">进阶</p>
+				<div class="jinjie-content">
+				    <div class="exerc-content1">
+					    <font class="timu-name">前端模板技术基础</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="gaojie">高阶</p>
+				<div class="gaojie-content">
+				    <div class="exerc-content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+				    </div>
+				</div>
+			</div>
+		 </div>
+		 <div id="tabs2" class=" exerc-info-content ">
+			<div class="first-level">
+				<p class="rumen">入门</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：121</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+					</div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">进阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">前端模板技术基础</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">高阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+		 </div>
+		 <div id="tabs3" class=" exerc-info-content ">
+			<div class="first-level">
+				<p class="rumen">入门</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：122</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+					</div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">进阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">前端模板技术基础</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">高阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+		 </div>
+		 <div id="tabs4" class=" exerc-info-content ">
+			<div class="first-level">
+				<p class="rumen">入门</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：123</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+					</div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">进阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">前端模板技术基础</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">高阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+		 </div>
+		 <div id="tabs5" class=" exerc-info-content ">
+			<div class="first-level">
+				<p class="rumen">入门</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：124</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+					</div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">进阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">前端模板技术基础</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">高阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+		 </div>
+		 <div id="tabs6" class=" exerc-info-content ">
+			<div class="first-level">
+				<p class="rumen">入门</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：125</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+					</div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">进阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">前端模板技术基础</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">高阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+		 </div>
+		 <div id="tabs7" class=" exerc-info-content ">
+			<div class="first-level">
+				<p class="rumen">入门</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：126</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>
+					</div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">进阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">前端模板技术基础</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+			<div class="first-level">
+				<p class="jinjie">高阶</p>
+				<div class="rumen-content">
+				    <div class="content1">
+					    <font class="timu-name">c/c++-1</font>
+						<font class="timu-check"><img src="../images/timu-check.png" class="show-exerc"></font>
+						<font class="timu-fenshu">总分：120</font>
+						<font class="timu-delete"><img src="../images/close.png" class="delete-exerc"></font>	
+				    </div>
+				</div>
+			</div>
+		 </div>
+	    <div class="setting-info-content sett-info">
+			<img src="../images/clear-data.png" class="clear">
+			<img src="../images/close-system.png" class="close">
+		</div>
+		</div>
+		<div class="showDetails">
+			<div class="close-btn1">
+				<img src="../images/close.png" width="20" height="20" class="close-details">
+			</div>
+			<div class="details-title">
+				<h2>详细信息</h2>
+			</div>
+			<div class="details-info2">
+				<!-- <ul class="ul2"> -->
+					<p class="name2">姓名：倪永</p>
+					<p class="sex2">性别：男</p>
+					<p class="school2">专业：计算机科学与工程学院</p>
+					<p class="ID2">学号：2015060301001</p>
+					<p class="email2">邮箱：3071003670@qq.com</p>
+					<p class="tel2">电话：18482271525</p>
+					<p class="photo2"><a href="">照片（啊啊啊）</a></p>
+				<!-- </ul> -->
+			</div>
+			<div class="details-exerc">
+				<div class="content2">
+					<font class="exerc-name">（Web后台）java-1</font>
+					<font class="tijiao-cishu">提交次数：1次</font>
+					<font class="fenshu2">分数：18分</font>
+				</div>
+			</div>
+		</div>
+		<div class="showExerc">
+			<div class="close-btn">
+				<img src="../images/close.png" width="20" height="20">
+			</div>
+			<div class="content3">
+				<form>
+					<p class="para">题目名称：<input class="ex-title" type="text" name="exerc-name"></p>
+					<p class="para">组别：
+						<select class="zubie" name="zubie">
+							<option value="qianduan" selected>前端</option>
+							<option value="houtai">后台</option>
+							<option value="anzhuo">安卓</option>
+							<option value="ios">iOS</option>
+							<option value="sheji">设计</option>
+							<option value="chanpin">产品</option>
+							<option value="yunwei">运维</option>
+						</select>
+					</p>
+					<p class="para">难度：
+						<select class="nandu" name="nandu">
+							<option value="rumen">入门题</option>
+							<option value="jinjie">进阶题</option>
+							<option value="gaojie">高阶题</option>
+						</select>
+					</p>
+					<p class="para">总分：<input class="zongfen" type="number" name="zongfen">分</p>
+					<p class="para">任务内容：</p>
+					<textarea class="neirong" id="textarea">	
+					</textarea>
+				</form>
+			</div>
+			<div class="confirm">
+				<img src="../images/cancel.png" class="cancel">
+				<img src="../images/confirm.png" class="confirm-btn">
+			</div>
+        </div>
+		<!-- <div id="tab2">tab2</div>
+		<div id="tab3">tab3</div>
+		<div id="tab4">tab4</div>
+		<div id="tab5">tab5</div>
+		<div id="tab6">tab6</div>
+		<div id="tab7">tab7</div> -->
+<script type="text/javascript" src="../js/admin.js"></script>
+<script type="text/javascript" src="../js/check-details.js"></script>
+<script type="text/javascript" src="../js/check-exerc.js"></script>
+</body>
+</html>

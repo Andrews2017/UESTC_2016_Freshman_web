@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="defaultExecutorType" value="REUSE"/>
+    </settings>
+
+    <!--使用对包扫描的方式取代<typeAlias>标签的配置-->
+    <typeAliases>
+        <package name="com.freshman.Entity"/>
+    </typeAliases>
+
+    <!--扫描Mapper配置文件-->
+    <mappers>
+        <mapper resource="Mapper\ProblemMapper.xml"/>
+        <mapper resource="Mapper\UserMapper.xml"/>
+        <mapper resource="Mapper\AnswerMapper.xml"/>
+        <mapper resource="Mapper\TotalScoreMapper.xml"/>
+        <mapper resource="Mapper\StudentMapper.xml"/>
+        <mapper resource="Mapper\AdminMapper.xml"/>
+    </mappers>
+</configuration>

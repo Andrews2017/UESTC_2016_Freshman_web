@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.freshman.Dao.TotalScoreDao">
+    <resultMap id="totalScoreMap" type="totalscore">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="category" column="category"/>
+        <result property="grade" column="grade"/>
+        <result property="nameId" column="name_id"/>
+        <result property="score" column="score"/>
+    </resultMap>
+    <select id="findTop5Score" parameterType="String" resultMap="totalScoreMap">
+        SELECT * FROM freshmandb.total_score  WHERE category = #{category} ORDER BY score DESC LIMIT 5
+    </select>
+    <select id="findUserScore"  resultMap="totalScoreMap">
+        SELECT * FROM freshmandb.total_score WHERE category = #{category} AND name_id = #{user.getUserId()}
+    </select>
+
+    <select id="showScoreDesc" parameterType="String" resultMap="totalScoreMap">
+        SELECT * FROM freshmandb.total_score WHERE category = #{category} ORDER BY score DESC
+    </select>
+    <insert id="insertTotalScore" >
+        INSERT INTO freshmandb.total_score(name, grade, category, name_id, score)
+          VALUES #{user.getUserName()},#{user.getUserGrade()},#{answer.getCategory()},#{user.getUserId()},#{answer.getScore()}
+    </insert>
+    <update id="updateTotalScore">
+        UPDATE freshmandb.total_score SET score = score + #{answer.getScore()} WHERE name_id = #{answer.getUserId()} AND category = #{answer.getCategory()}
+    </update>
+
+</mapper>

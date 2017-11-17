@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.freshman.Dao.AdminDao">
+    <resultMap id="userMap" type="user">
+        <id property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userPassword" column="user_password"/>
+        <result property="userNo" column="user_no"/>
+        <result property="userEmail" column="user_email"/>
+        <result property="userAuthority" column="user_authority"/>
+        <result property="sex" column="sex"/>
+        <result property="grade" column="grade"/>
+        <result property="photo" column="photo"/>
+        <result property="salty" column="salty"/>
+        <result property="edu" column="edu"/>
+        <result property="major" column="major"/>
+    </resultMap>
+    <resultMap id="totalScoreMap" type="totalscore">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="category" column="category"/>
+        <result property="grade" column="grade"/>
+        <result property="nameId" column="name_id"/>
+        <result property="score" column="score"/>
+    </resultMap>
+
+    <update id="modifyAuth">
+        UPDATE freshmandb.user SET user_authority = #{1} WHERE user_id = #{0}
+    </update>
+
+    <insert id="publishProblem">
+        INSERT INTO freshmandb.problem(title,category,content,score,level) VALUES (#{0},#{1},#{2},#{3},#{4})
+    </insert>
+
+    <select id="showRankingDesc" resultMap="totalScoreMap">
+        SELECT * from freshmandb.total_score WHERE category = #{0} ORDER BY score DESC LIMIT #{1},20
+    </select>
+
+    <select id="showAllUsers" resultMap="userMap">
+        SELECT * FROM freshmandb.user
+    </select>
+
+    <select id="showUserNum" resultType="int">
+        SELECT COUNT(*) FROM freshmandb.total_score
+    </select>
+
+    <select id="showRankingByScoreAndCategory" resultMap="totalScoreMap">
+        SELECT * FROM freshmandb.total_score WHERE category = #{category} ORDER BY score DESC
+    </select>
+
+</mapper>

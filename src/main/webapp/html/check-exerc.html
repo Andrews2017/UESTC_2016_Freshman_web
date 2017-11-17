@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check-exercises</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="../images/icon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/check-exerc.css">
+    <link rel="stylesheet" type="text/css" href="../css/wangEditor.min.css">
+    <script src="../js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="close-btn">
+		<img src="../images/close.png" width="20" height="20">
+	</div>
+	<div class="content">
+		<form>
+			<p>题目名称：<input type="text" name="exerc-name"></p>
+			<p>组别：
+				<select name="zubie">
+					<option value="qianduan" selected>前端</option>
+					<option value="houtai">后台</option>
+					<option value="anzhuo">安卓</option>
+					<option value="ios">iOS</option>
+					<option value="sheji">设计</option>
+					<option value="chanpin">产品</option>
+					<option value="yunwei">运维</option>
+				</select>
+			</p>
+			<p>难度：
+				<select name="nandu">
+					<option value="rumen">入门题</option>
+					<option value="jinjie">进阶题</option>
+					<option value="gaojie">高阶题</option>
+				</select>
+			</p>
+			<p>总分：<input type="number" name="zongfen">分</p>
+			<p>任务内容：</p>
+			<textarea id="textarea">
+					
+			</textarea>
+		</form>
+	</div>
+	<div class="confirm">
+		<img src="../images/cancel.png" class="cancel">
+		<img src="../images/confirm.png" class="confirm-btn">
+	</div>
+</div>
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/wangEditor.min.js"></script>
+<script type="text/javascript" src="../js/check-exerc.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+.showDetails{
+	background-image: url("../images/background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width:600px; 
+	height:650px;
+	position:fixed;
+	left: 30%;
+	top: 0px;
+	border-radius: 10px;
+}
+.close-details{
+	position: relative;
+	left: 578px;
+}
+.details-title{
+	border-bottom: 2px solid grey;
+	width: 80%;
+	margin:0 auto;
+	padding-bottom: 15px;
+}
+.details-info2{
+	border-bottom: 2px solid grey;
+	width: 80%;
+	margin:0 auto;
+	padding: 25px 0px 60px 0px;
+	font-family: "Microsoft YaHei UI";
+	padding: 20px 0px 80px 0px;
+	display: block;
+}
+.details-info2 p{
+	font-size: 11px;
+	padding-bottom: 10px;
+}
+.name2{
+	color: #ff0000;
+}
+/*.ul2{
+	list-style: none;
+}
+.ul2 li{
+	padding-bottom: 10px;
+}*/
+.details-exerc{
+	width: 80%;
+	margin:0 auto;
+	font-size: 12px;
+}
+.exerc-name2,.tijiao-cishu2,.fenshu2{
+	float: left;
+	margin-left: 10%;
+}
+.content2{
+	width: 100%;
+	margin-left: 5%;
+}
+.exerc-name2{
+width: 30%;
+margin-right: 20px;
+}
+.tijiao-cishu{
+width: 20%;
+margin-right: 30px;
+}
+.fenshu2{
+width: 15%;
+}
