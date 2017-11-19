@@ -40,6 +40,9 @@ $(document).ready(function(){
                idNum:idNumber,
                checkedWords:codeNumber
 		    },
+		success:function(){
+			alert("注册成功！")
+		},
 		error:function(xhr){
 			alert(xhr.statusText+" "+"验证码错误");
 		}

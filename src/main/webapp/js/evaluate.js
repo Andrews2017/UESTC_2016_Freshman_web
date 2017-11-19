@@ -120,7 +120,7 @@ $(document).ready(function(){
 		}
 	})
 	//改题人下载题目答案
-	$(document).on("click",".download",function{
+	$(document).on("click",".download",function(){
 		var fileName=$(".check").attr(answerId);
 		$.ajax({
 			url:"/correct/downLoadAnswer",
