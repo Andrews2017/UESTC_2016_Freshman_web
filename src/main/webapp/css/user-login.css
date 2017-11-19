@@ -35,7 +35,7 @@ input#code-number{
 	padding: 15px;
 	margin-top: -48px;
 }
-.signup-submit {
+.signup-submit,.reg-submit {
 	width: 270px;
 	padding: 13px;
 	background-color: #286090;
