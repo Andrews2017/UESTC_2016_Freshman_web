@@ -2,14 +2,14 @@
 This is a web developed in UESTC-IUSTU workshop which was designed for new members to learn about web development, mobile app development (Android&ios), etc.
 
 # Developers:
-# Front-end: Niyongabo Rubungo Andre
-   ## Languages used: HTML, CSS, JavaScript (JQuery)
+**Front-end:** _Niyongabo Rubungo Andre_ 
+   - **Languages used:** HTML, CSS, JavaScript (JQuery)
    
-# Back-end: 李峰君
-   ## Languages used: Java
+**Back-end:** _李峰君_
+   - **Languages used:** Java
    
-# Designer: 王宁
-   ## Tool used: Axure RP
+**Designer:** _王宁_
+   - **Tool used:** Axure RP
    
    
 # 招新平台功能点1.0
