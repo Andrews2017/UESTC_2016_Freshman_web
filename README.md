@@ -1,5 +1,17 @@
 # UESTC_2016Freshman_web
-This is a web for UESTC-iustu workshop which was designed for freshman to learn about web development,mobile app development(Android&amp;ios),..
+This is a web developed in UESTC-IUSTU workshop which was designed for new members to learn about web development, mobile app development (Android&ios), etc.
+
+Developers:
+Front-end: Niyongabo Rubungo Andre
+   Languages used: HTML, CSS, JavaScript (JQuery)
+   
+Back-end: 李峰君
+   Languages used: Java
+   
+Design: 王宁
+   Tool used: Axure RP
+   
+   
 # 招新平台功能点1.0
 ---
 后台的API
